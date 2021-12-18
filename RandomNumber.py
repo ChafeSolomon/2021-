@@ -1,12 +1,8 @@
 import random as rand
 
-#Generate random number
-randomnumber = rand.randrange(0,10)
-usernum = ""
-
 #Functions
 def func(usernum): 
-    usernum = int(input("Guess a number. "))
+    usernum = int(input("Please guess a number between 0-10. "))
     if randomnumber > usernum:
         print("Try guessing again with a number higher than your guess. ")
         
@@ -16,25 +12,33 @@ def func(usernum):
     elif usernum > 10:
         print("That number is not even in range my dude... try again.")
     
-    return(usernum)
-    
+    return(usernum)  
 def whileloop():
+    global usernum
+    global randomnumber
+    usernum = ""
+    randomnumber = rand.randrange(0,10)
+
+    if usernum == "":
+        print("Welcome to the number generator!")
+        pass
+
     while usernum != randomnumber:
-        print(usernum)
         usernum = func(usernum)
 
-whileloop()
+    while usernum == randomnumber:
+        print("Great work! You guessed correctly. ")
+        answer = input("Would you like to continue? ")
+        if answer == 'Yes':
+            whileloop()
+
+        else:
+            print("Thank you for playing")
+            break
 
 #Compare number
 
-if usernum == randomnumber:
-    print("Great work! You guessed correctly. ")
-    answer = input("Answer ")
-    if answer == 'Yes':
-        whileloop()
-    
-    else:
-        exit[0]
+whileloop()
 
 
 
