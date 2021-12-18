@@ -10,7 +10,7 @@ def func(usernum):
         print("Try guessing a number lower than your guess. ")
 
     elif usernum > 10:
-        print("That number is not even in range my dude... try again.")
+        print("That number is not even in range my dude... try again. ")
     
     return(usernum)  
 def whileloop():
@@ -33,7 +33,7 @@ def whileloop():
             whileloop()
 
         else:
-            print("Thank you for playing")
+            print("""______________________\n\nThank you for playing!\n____________________""")
             break
 
 #Compare number
