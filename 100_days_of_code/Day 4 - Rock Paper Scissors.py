@@ -25,7 +25,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-
+images = [rock,paper,scissors]
 #Write your code below this line 👇
 
 uanswer = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
@@ -35,27 +35,27 @@ random_answer = str(random_answer)
 
 if uanswer == '0':
     if random_answer == '1':
-        print(f"{rock}\nComputer Answer:\n{paper}\nYou Lose")
+        print(f"{images[0]}\nComputer Answer:\n{images[1]}\nYou Lose")
     elif random_answer == '2':
-        print(f"{rock}\nComputer Answer:\n{scissors}\nYou Win")
+        print(f"{images[0]}\nComputer Answer:\n{images[2]}\nYou Win")
     else:
-        print(f"{rock}\nComputer Answer:\n{rock}\nYou Tied")
+        print(f"{images[0]}\nComputer Answer:\n{images[0]}\nYou Tied")
 
 if uanswer == '1':
     if random_answer == '2':
-        print(f"{paper}\nComputer Answer:\n{scissors}\nYou Lose")
+        print(f"{images[1]}\nComputer Answer:\n{images[2]}\nYou Lose")
     elif random_answer == '0':
-        print(f"{paper}\nComputer Answer:\n{rock}\nYou Win")
+        print(f"{images[1]}\nComputer Answer:\n{images[0]}\nYou Win")
     else:
-        print(f"{paper}\nComputer Answer:\n{paper}\nYou Tied")
+        print(f"{images[1]}\nComputer Answer:\n{images[1]}\nYou Tied")
 
 if uanswer == '2':
     if random_answer == '0':
-        print(f"{scissors}\nComputer Answer:\n{rock}\nYou Lose")
+        print(f"{images[2]}\nComputer Answer:\n{images[0]}\nYou Lose")
     elif random_answer == '1':
-        print(f"{scissors}\nComputer Answer:\n{paper}\nYou Win")
+        print(f"{images[2]}\nComputer Answer:\n{images[1]}\nYou Win")
     else:
-        print(f"{scissors}\nComputer Answer:\n{scissors}\nYou Tied")
+        print(f"{images[2]}\nComputer Answer:\n{images[2]}\nYou Tied")
 
 
 
