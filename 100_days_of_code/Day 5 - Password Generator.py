@@ -36,3 +36,4 @@ string = random.sample(string, len(string))
 for n in string:
     new_string += n
 print(f"Hard level string: {new_string}")
+
