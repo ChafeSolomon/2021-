@@ -1,4 +1,3 @@
-from replit import clear
 import art
 #HINT: You can call clear() to clear the output in the console.
 bidders = {}
