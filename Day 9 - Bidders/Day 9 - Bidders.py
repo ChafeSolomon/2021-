@@ -24,7 +24,6 @@ def calculation():
 
 more_users = "Yes"
 while more_users == "Yes":
-    clear()
     print(art.logo)
     print("Welcome to the Auction!")
     bidder_key = input("What is your name? ")
