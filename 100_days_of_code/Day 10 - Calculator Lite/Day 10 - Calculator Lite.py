@@ -20,13 +20,13 @@ operations = {
 }
 def calculator():
     print(art.logo)
-    num1 = int(input("What's the first number?: "))
+    num1 = float(input("What's the first number?: "))
     for symbol in operations:
         print(symbol)
 
     #Here we select "+"
     operation_symbol = input("Pick an operation: ") 
-    num2 = int(input("What's the next number?: "))
+    num2 = float(input("What's the next number?: "))
     calculation_function = operations[operation_symbol]
     first_answer = calculation_function(num1, num2)
 
@@ -36,7 +36,7 @@ def calculator():
     while calculate_again == "y":
     #Here we select "*" which overides the "+" we selected on line 26.
         operation_symbol = input("Pick an operation: ") 
-        num3 = int(input("What's the next number?: "))
+        num3 = float(input("What's the next number?: "))
 
         #Here the calculation_function selected will be the multiply() function
         calculation_function = operations[operation_symbol] 
