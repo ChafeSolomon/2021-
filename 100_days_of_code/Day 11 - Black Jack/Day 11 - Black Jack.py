@@ -68,17 +68,11 @@ def calculate(arg_check_winner,hit):
         return hit
 
 
-    if user_card_value == 21:
-        print(f"You Win! Your Hand: {user_card_value} Dealer Hand: {dealer_card_value}")
-        hit = False
-    elif user_card_value > 21:
+    elif user_card_value > 21 or dealer_card_value == 21:
         print(f"You Lose! Your Hand: {user_card_value} Dealer Hand: {dealer_card_value}")
         hit = False
-    elif dealer_card_value == 21:
-        print(f"You Lose! Your Hand: {user_card_value} Dealer Hand: {dealer_card_value} ")
-        hit = False
         
-    elif dealer_card_value > 21:
+    elif dealer_card_value > 21 or user_card_value == 21:
         print(f"You Win! Your Hand: {user_card_value} Dealer Hand: {dealer_card_value}")  
         hit = False
 
