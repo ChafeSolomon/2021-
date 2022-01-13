@@ -18,6 +18,7 @@ operations = {
   "*": multiply,
   "/": divide
 }
+#
 def calculator():
     print(art.logo)
     num1 = float(input("What's the first number?: "))
