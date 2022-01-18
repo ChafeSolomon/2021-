@@ -1,5 +1,6 @@
 import random
 from items import items
+from logo import logo
 
 
 score = 0
@@ -9,6 +10,7 @@ play = True
 def main():
     # create a dictionary that stores the information we are comparing.
     global items
+    print(logo)
     
     while play == True:
         options = {}
@@ -45,11 +47,11 @@ def game(option_one,option_two,options):
     global score
     global play
     
-    print(f"Do you think {option_two} is Higher or Lower than {option_one}?")
+    print(f"Based off the two options! Do you think that {option_two} has a Higher or Lower amount of googe searches than {option_one}?")
     
     
     # prompt the user asking for which choice is correct. 
-    user_responce = input("Higher or Lower ").lower()
+    user_responce = input("Sooooo Higher or Lower? ").lower()
     if user_responce == "higher":
         if options[option_two] > options[option_one]:
             print(f"You are correct! Here are the resuts!\n{options}\nLets move on. ")
@@ -75,7 +77,9 @@ def game(option_one,option_two,options):
                 high_score = score
             play = False
             return
-                
+
+
+print("Welcome to Higher or Lower!")
 main()
 while input("Would you like to play again? ").lower() == "yes":
     play = True
