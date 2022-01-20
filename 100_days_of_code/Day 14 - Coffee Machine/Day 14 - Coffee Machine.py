@@ -1,4 +1,5 @@
 import Menu
+import gfx
 
 menu = Menu.MENU
 resources = Menu.resources
@@ -63,12 +64,14 @@ def resource_check(param_user_selection):
     return True
 
 def brew(param_user_selection):
+    print(gfx.cup)
     menu_ingredients = menu[param_user_selection]["ingredients"]
     for i in menu_ingredients:
         resources[i] -= menu_ingredients[i]
     print(f"Here is your {user_selection}. Enjoy!")
 
 while power_state == True:
+    print(gfx.coffee)
     coffee_bool = False
     user_selection = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
