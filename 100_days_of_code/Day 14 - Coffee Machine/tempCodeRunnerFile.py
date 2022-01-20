@@ -1,0 +1,1 @@
+milk']}ml\nCoffee: {resources['coffee']}\nMoney: ${profit}")
