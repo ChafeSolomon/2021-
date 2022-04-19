@@ -31,7 +31,6 @@ def card_generator(hit):
             hit,check_winner,hit_me = calculate(hit,check_winner,hit_me)
         
         elif hit_me == "stand":
-            print(hit)
             check_winner = True
             hit,check_winner,hit_me = calculate(hit,check_winner,hit_me)
 
