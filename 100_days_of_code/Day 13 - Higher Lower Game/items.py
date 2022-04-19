@@ -1,0 +1,1 @@
+items = {"Wayne Gretzky":201000, "Springer Spaniel":165000,"Cheeky Nandos":14800,"Pythagoras":201000,"Lukemia":501000,"Solar Panels":368000,"Stretch Positions":1800000,"Pemba Dorje Sherpa":1300,"Birth":90000,"Munich Olympics Massacre":2900}
